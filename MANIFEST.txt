@@ -1,0 +1,43 @@
+Supplementary material for manuscript EMSSP-26-1409
+Prepared for Journal of Vibration and Control
+Package date: 18 September 2026
+
+Primary SDRE-LQR reproduction files
+-----------------------------------
+Controller implementation:
+  src/dpsus/controllers/sdre_lqr.py
+  src/dpsus/controllers/lqr.py
+  src/dpsus/controllers/passive.py
+
+Plant, road, and evaluation code:
+  src/dpsus/plant/
+  src/dpsus/roads/
+  src/dpsus/evaluation/
+
+Configurations:
+  configs/vehicle_quarter_car.yaml
+  configs/lqr_tuned.yaml
+  configs/sdre_lqr_tuned.yaml
+  configs/test_cases.yaml
+
+Benchmark script and archived results:
+  scripts/run_all_paper_benchmarks.py
+  results/sdre_lqr_paper/benchmark.csv
+  results/sdre_lqr_paper/summary.csv
+  results/sdre_lqr_paper/metadata.yaml
+  results/sdre_lqr_paper/figures/
+
+Verification:
+  tests/
+
+Environment and usage information:
+  README.md
+  requirements.txt
+  environment.yml
+  pyproject.toml
+  Makefile
+  LICENSE
+
+The package also retains the configurations and tests for the related
+controllers used by the shared benchmark framework so that imports and
+cross-controller regression tests remain reproducible.
